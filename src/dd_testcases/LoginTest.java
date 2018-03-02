@@ -34,13 +34,13 @@ public class LoginTest extends Page {
 	public void doLogin(String username,String password) throws IOException{
 		
 		logs.debug("Inside Login Test");
-		System.out.print("Started the Test");
+		System.out.println("Started the Test");
 		findElement("username").sendKeys(username);
-		System.out.print("Entered USername");
+		System.out.println("Entered USername");
 		findElement("password").sendKeys(password);
-		System.out.print("Entered Password");
+		System.out.println("Entered Password");
 		findElement("login").click();
-		System.out.print("Clicked Login");
+		System.out.println("Clicked Login");
 		TestUtil.CaptureScreenshot();
 		GlobalUsername = username;
 		
